@@ -1,11 +1,13 @@
 import CatList from './components/CatList';
 import './App.css';
+import DATA from './data.js';
 
-function App() {
+const App = () => {
   return (
     <>
-    <CatList></CatList>
-    </>
+      <CatList catData={DATA}/>
+    </>     
   );
-}
+};
+
 export default App;
